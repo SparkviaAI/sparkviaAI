@@ -22,20 +22,6 @@ const colors = [
   "bg-emerald-400 text-white",
 ];
 
-const marqueeVariants = {
-  animate: (direction: "left" | "right") => ({
-    x: direction === "left" ? ["0%", "-100%"] : ["-100%", "0%"],
-    transition: {
-      x: {
-        repeat: Infinity,
-        repeatType: "loop",
-        duration: 20,
-        ease: "linear",
-      },
-    },
-  }),
-};
-
 const FeaturesSection = () => {
   return (
     <section className="bg-[#F8F8F8] py-20 rounded-[20px] overflow-hidden mb-[6rem]">
@@ -55,13 +41,17 @@ const FeaturesSection = () => {
           </div>
         </div>
 
-        {/* First Marquee (left) */}
         <div className="mt-12 overflow-hidden">
           <motion.div
             className="flex gap-4 w-max"
-            variants={marqueeVariants}
-            animate="animate"
-            custom="left"
+            initial={{ x: "0%" }}
+            animate={{ x: "-100%" }}
+            transition={{
+              repeat: Infinity,
+              repeatType: "loop",
+              duration: 20,
+              ease: "linear",
+            }}
           >
             {[...features, ...features].map((text, index) => (
               <div
@@ -76,13 +66,17 @@ const FeaturesSection = () => {
           </motion.div>
         </div>
 
-        {/* Second Marquee (right) */}
         <div className="mt-8 overflow-hidden">
           <motion.div
             className="flex gap-4 w-max"
-            variants={marqueeVariants}
-            animate="animate"
-            custom="right"
+            initial={{ x: "-100%" }}
+            animate={{ x: "0%" }}
+            transition={{
+              repeat: Infinity,
+              repeatType: "loop",
+              duration: 20,
+              ease: "linear",
+            }}
           >
             {[...features, ...features].map((text, index) => (
               <div
