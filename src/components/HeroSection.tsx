@@ -19,7 +19,7 @@ const HeroSection = () => {
             Create blogs, ad copies, emails, social media posts, images, and
             more in seconds! Register and get a free 100 Spark credits
           </p>
-          <button className="flex justify-center items-center rounded-[5px] font-semibold text-[16px] leading-[130%] bg-[#FFFFFF] py-[19px] px-[24px] h-[49px] mt-[20px]">
+          <button className="flex justify-center items-center rounded-[5px] font-semibold text-[16px] leading-[130%] bg-[#FFFFFF] py-[19px] px-[24px] h-[49px] mt-[20px] cursor-pointer">
             Start writing Now!
           </button>
         </div>

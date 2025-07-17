@@ -21,7 +21,7 @@ const SectionOne = () => {
                 className="w-[90%] h-full outline-none px-[10px] text-[#DADADA] font-medium text-[14px] leading-[110.00000000000001%]"
                 placeholder="Prompt with our “Copywriting Tool”"
               />
-              <button>
+              <button className="cursor-pointer">
                 <img src={sendIcon} alt={sendIcon} />
               </button>
             </div>

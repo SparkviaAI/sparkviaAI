@@ -8,11 +8,11 @@ const NavBar = () => {
           <img src={brandLogo} alt={brandLogo} />
         </button>
         <ul className="flex gap-[60px] font-normal text-[16px] leading-[130%] text-[#B8B8B8]">
-          <li>Solutions</li>
-          <li>Features</li>
-          <li>FAQ</li>
+          <li className="cursor-pointer">Solutions</li>
+          <li className="cursor-pointer">Features</li>
+          <li className="cursor-pointer">FAQ</li>
         </ul>
-        <button className="flex justify-center items-center font-semibold text-[16px] text-[#E8E8E8] leading-[130%] border border-[#E8E8E8] px-[24px] py-[19px] rounded-[5px] h-[49px]">
+        <button className="flex justify-center items-center font-semibold text-[16px] text-[#E8E8E8] leading-[130%] border border-[#E8E8E8] px-[24px] py-[19px] rounded-[5px] h-[49px] cursor-pointer">
           Get Started
         </button>
       </div>

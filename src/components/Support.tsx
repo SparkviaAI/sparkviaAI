@@ -16,7 +16,7 @@ const Support = () => {
             Got Queries? Explore our Documentation. For bespoke? AI tools
             development, kindly reach us at
           </p>
-          <button className="flex justify-center items-center rounded-[5px] font-semibold text-[16.55px] leading-[130%] border border-[#EDFCEA] text-[#FFFFFF] py-[19px] px-[24px] h-[49px] mt-[20px]">
+          <button className="flex justify-center items-center rounded-[5px] font-semibold text-[16.55px] leading-[130%] border border-[#EDFCEA] text-[#FFFFFF] py-[19px] px-[24px] h-[49px] mt-[20px] cursor-pointer">
             Contact@Sparkvia.ai
           </button>
         </div>
