@@ -1,0 +1,16 @@
+        <svg
+          width="521"
+          height="1"
+          viewBox="0 0 521 1"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <line
+            y1="0.5"
+            x2="521"
+            y2="0.5"
+            stroke="black"
+            strokeOpacity="0.4"
+            strokeDasharray="8 8"
+          />
+        </svg>

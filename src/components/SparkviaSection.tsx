@@ -1,7 +1,8 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import marketImage from "../assets/market.svg";
 import salesImage from "../assets/salesImage.svg";
 import adCopyImage from "../assets/adCopy.svg";
+import lineIcon from "../assets/line.svg";
 
 interface SectionContent {
   title: string;
@@ -30,17 +31,47 @@ const sections: Record<string, SectionContent> = {
   },
 };
 
+const tabKeys = Object.keys(sections) as (keyof typeof sections)[];
+
 const SparkviaSection: React.FC = () => {
   const [activeTab, setActiveTab] =
     useState<keyof typeof sections>("Market Plan");
+  const intervalRef = useRef<ReturnType<typeof setInterval> | null>(null);
+
+  useEffect(() => {
+    intervalRef.current = setInterval(() => {
+      setActiveTab((prevTab) => {
+        const currentIndex = tabKeys.indexOf(prevTab);
+        const nextIndex = (currentIndex + 1) % tabKeys.length;
+        return tabKeys[nextIndex];
+      });
+    }, 5000);
+
+    return () => {
+      if (intervalRef.current) clearInterval(intervalRef.current);
+    };
+  }, []);
+
+  const handleTabClick = (key: keyof typeof sections) => {
+    setActiveTab(key);
+    if (intervalRef.current) {
+      clearInterval(intervalRef.current);
+      intervalRef.current = setInterval(() => {
+        setActiveTab((prevTab) => {
+          const currentIndex = tabKeys.indexOf(prevTab);
+          const nextIndex = (currentIndex + 1) % tabKeys.length;
+          return tabKeys[nextIndex];
+        });
+      }, 5000);
+    }
+  };
+
   const current = sections[activeTab];
 
   return (
     <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-30 py-30">
       <div className="flex-1 space-y-6 w-[448px] relative top-8">
-        <svg width="521" height="1" viewBox="0 0 521 1" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <line y1="0.5" x2="521" y2="0.5" stroke="black" stroke-opacity="0.4" stroke-dasharray="8 8"/>
-        </svg>
+        <img src={lineIcon} alt={lineIcon} />
         <h2
           style={{ fontFamily: "Gilda Display" }}
           className="text-[40px] font-normal leading-[120%] text-[#111111] w-[389px] relative top-4 pb-8"
@@ -58,7 +89,7 @@ const SparkviaSection: React.FC = () => {
           {Object.entries(sections).map(([key, section]) => (
             <div
               key={key}
-              onClick={() => setActiveTab(key as keyof typeof sections)}
+              onClick={() => handleTabClick(key as keyof typeof sections)}
               className={`cursor-pointer font-semibold text-[20px] transition-all ${
                 activeTab === key
                   ? "text-black border-l-2 border-[#2EDB66] pl-2"
