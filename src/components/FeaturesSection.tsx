@@ -49,7 +49,7 @@ const FeaturesSection = () => {
             transition={{
               repeat: Infinity,
               repeatType: "loop",
-              duration: 20,
+              duration: 60,
               ease: "linear",
             }}
           >
@@ -74,7 +74,7 @@ const FeaturesSection = () => {
             transition={{
               repeat: Infinity,
               repeatType: "loop",
-              duration: 20,
+              duration: 60,
               ease: "linear",
             }}
           >
