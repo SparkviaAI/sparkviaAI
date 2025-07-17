@@ -2,7 +2,6 @@ import React, { useState, useEffect, useRef } from "react";
 import marketImage from "../assets/market.svg";
 import salesImage from "../assets/salesImage.svg";
 import adCopyImage from "../assets/adCopy.svg";
-import lineIcon from "../assets/line.svg";
 
 interface SectionContent {
   title: string;
@@ -70,11 +69,10 @@ const SparkviaSection: React.FC = () => {
 
   return (
     <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-30 py-30">
-      <div className="flex-1 space-y-6 w-[448px] relative top-8">
-        <img src={lineIcon} alt={lineIcon} />
+      <div className="flex-1 space-y-6 w-[448px] relative top-8 border-t border-t-[#00000066] border-dashed">
         <h2
           style={{ fontFamily: "Gilda Display" }}
-          className="text-[40px] font-normal leading-[120%] text-[#111111] w-[389px] relative top-4 pb-8"
+          className="text-[40px] font-normal leading-[120%] text-[#111111] w-[389px] relative top-4 pb-4"
         >
           Discover The Magic Of Sparkvia Write.
         </h2>
