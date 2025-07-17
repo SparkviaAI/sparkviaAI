@@ -22,6 +22,8 @@ const colors = [
   "bg-emerald-400 text-white",
 ];
 
+const repeatedFeatures = [...features, ...features];
+
 const FeaturesSection = () => {
   return (
     <section className="bg-[#F8F8F8] py-20 rounded-[20px] overflow-hidden mb-[6rem]">
@@ -41,21 +43,20 @@ const FeaturesSection = () => {
           </div>
         </div>
 
-        <div className="mt-12 overflow-hidden">
+        <div className="relative overflow-hidden mt-12">
           <motion.div
             className="flex gap-4 w-max"
-            initial={{ x: "0%" }}
-            animate={{ x: "-100%" }}
+            initial={{ x: 0 }}
+            animate={{ x: "-50%" }}
             transition={{
               repeat: Infinity,
-              repeatType: "loop",
               duration: 60,
               ease: "linear",
             }}
           >
-            {[...features, ...features].map((text, index) => (
+            {repeatedFeatures.map((text, index) => (
               <div
-                key={`left-${index}`}
+                key={`scroll1-${index}`}
                 className={`min-w-[250px] p-4 rounded-md text-sm font-medium text-center shadow ${
                   colors[index % colors.length]
                 }`}
@@ -66,21 +67,20 @@ const FeaturesSection = () => {
           </motion.div>
         </div>
 
-        <div className="mt-8 overflow-hidden">
+        <div className="relative overflow-hidden mt-8">
           <motion.div
             className="flex gap-4 w-max"
-            initial={{ x: "-100%" }}
+            initial={{ x: "-50%" }}
             animate={{ x: "0%" }}
             transition={{
               repeat: Infinity,
-              repeatType: "loop",
               duration: 60,
               ease: "linear",
             }}
           >
-            {[...features, ...features].map((text, index) => (
+            {repeatedFeatures.map((text, index) => (
               <div
-                key={`right-${index}`}
+                key={`scroll2-${index}`}
                 className={`min-w-[250px] p-4 rounded-md text-sm font-medium text-center shadow ${
                   colors[(index + 3) % colors.length]
                 }`}

@@ -54,7 +54,7 @@ const FaqSection: React.FC = () => {
           {faqs.map((faq, index) => (
             <div
               key={index}
-              className="border-b border-[#FFFFFF1A] border-dashed pb-4 cursor-pointer"
+              className="border-b border-[#FFFFFF1A] border-dashed pb-4 cursor-pointer w-[500px]"
               onClick={() => toggleFAQ(index)}
             >
               <div className="flex justify-between items-start">
@@ -68,7 +68,7 @@ const FaqSection: React.FC = () => {
                 )}
               </div>
               {openIndex === index && faq.answer && (
-                <p className="text-[#FFFFFF99] text-[14px] mt-3 leading-[140%] max-w-md">
+                <p className="text-[#FFFFFF99] text-[14px] mt-3 leading-[140%] max-w-sm">
                   {faq.answer}
                 </p>
               )}

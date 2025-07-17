@@ -68,7 +68,7 @@ const SparkviaSection: React.FC = () => {
   const current = sections[activeTab];
 
   return (
-    <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-30 py-30">
+    <div className="flex flex-col md:flex-row items-start md:items-cente justify-between gap-30 py-30">
       <div className="flex-1 space-y-6 w-[448px] relative top-8 border-t border-t-[#00000066] border-dashed">
         <h2
           style={{ fontFamily: "Gilda Display" }}
@@ -82,8 +82,7 @@ const SparkviaSection: React.FC = () => {
           tasks!
         </p>
 
-        {/* Tabs */}
-        <div className="space-y-6">
+        <div className="space-y-4">
           {Object.entries(sections).map(([key, section]) => (
             <div
               key={key}
@@ -105,7 +104,7 @@ const SparkviaSection: React.FC = () => {
         </div>
       </div>
 
-      <div className="flex-1 w-full max-w-md mx-auto">
+      <div className="flex-1 w-full relative top-8">
         <div className="bg-white rounded-md overflow-hidden">
           <img
             src={current.image}
