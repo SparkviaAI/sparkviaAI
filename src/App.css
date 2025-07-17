@@ -1,0 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Gilda+Display&display=swap");
+@font-face {
+  font-family: "Gilroy";
+  src: local("Gilroy"), url("./assets/Gilroy-Medium.ttf") format("opentype");
+}
+body {
+  background-color: #111111;
+  font-family: "Gilroy";
+}
+
+.shad {
+  border-image-source: linear-gradient(180deg, #111111 0%, #49df28 100%);
+  box-shadow: 0px 34px 34px 10px rgba(12, 213, 77, 0.3);
+}
