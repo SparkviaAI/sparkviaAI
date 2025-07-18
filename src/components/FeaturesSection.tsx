@@ -26,17 +26,17 @@ const repeatedFeatures = [...features, ...features];
 
 const FeaturesSection = () => {
   return (
-    <section className="bg-[#F8F8F8] py-20 rounded-[20px] overflow-hidden mb-[6rem]">
+    <section className="bg-[#F8F8F8] py-10 lg:py-20 rounded-[20px] overflow-hidden mb-[3rem] lg:mb-[6rem]">
       <div className="text-center">
-        <div className="flex justify-center">
-          <div className="flex justify-center flex-col items-center w-[508px]">
+        <div className="flex justify-center px-[6%]">
+          <div className="flex justify-center flex-col items-center lg:w-[508px]">
             <h2
               style={{ fontFamily: "Gilda Display" }}
-              className="text-3xl md:text-[48px] font-normal leading-[110.00000000000001%]"
+              className="text-4xl md:text-[48px] font-normal leading-[110.00000000000001%]"
             >
               Our Worldclass <br className="md:hidden" /> Features
             </h2>
-            <p className="text-[#000000E5] mt-4 font-normal text-[20px] leading-[130%] w-[448px] mx-auto">
+            <p className="text-[#000000E5] mt-4 font-normal text-[18px] lg:text-[20px] leading-[130%] lg:w-[448px] mx-auto">
               We built the best for the best. Below are some of our amazing
               features that makes us world-class.
             </p>
@@ -67,7 +67,7 @@ const FeaturesSection = () => {
           </motion.div>
         </div>
 
-        <div className="relative overflow-hidden mt-8">
+        <div className="relative overflow-hidden mt-4 lg:mt-8">
           <motion.div
             className="flex gap-4 w-max"
             initial={{ x: "-50%" }}

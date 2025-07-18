@@ -68,15 +68,15 @@ const SparkviaSection: React.FC = () => {
   const current = sections[activeTab];
 
   return (
-    <div className="flex flex-col md:flex-row items-start md:items-cente justify-between gap-30 py-30">
-      <div className="flex-1 space-y-6 w-[448px] relative top-8 border-t border-t-[#00000066] border-dashed">
+    <div className="flex flex-col md:flex-row items-start md:items-cente justify-between gap-[30px] lg:gap-30 py-20 lg:py-30">
+      <div className="flex-1 space-y-6 lg:w-[448px] relative top-8 border-t border-t-[#00000066] border-dashed">
         <h2
           style={{ fontFamily: "Gilda Display" }}
-          className="text-[40px] font-normal leading-[120%] text-[#111111] w-[389px] relative top-4 pb-4"
+          className="lg:text-[40px] text-4xl font-normal leading-[120%] text-[#111111] lg:w-[389px] relative top-4 pb-4"
         >
           Discover The Magic Of Sparkvia Write.
         </h2>
-        <p className="text-[#00000066] text-[18px] leading-[130%] font-normal">
+        <p className="text-[#00000066] text-[16px] lg:text-[18px] leading-[130%] font-normal">
           Your go-to for everything from writing help to marketing insights and
           business solutions. Take a closer look at how we simplify your writing
           tasks!
@@ -87,7 +87,7 @@ const SparkviaSection: React.FC = () => {
             <div
               key={key}
               onClick={() => handleTabClick(key as keyof typeof sections)}
-              className={`cursor-pointer font-semibold text-[20px] transition-all ${
+              className={`cursor-pointer font-semibold text-[18px] lg:text-[20px] transition-all ${
                 activeTab === key
                   ? "text-black border-l-2 border-[#2EDB66] pl-2"
                   : "text-[#11111199] font-semibold hover:text-black pl-2 border-l-2 border-[#0000001A]"
@@ -95,7 +95,7 @@ const SparkviaSection: React.FC = () => {
             >
               {section.title}
               {activeTab === key && (
-                <p className="text-[#000000] text-[16px] font-normal leading-[130%] w-[325px] mt-3">
+                <p className="text-[#000000] text-[14px] lg:text-[16px] font-normal leading-[130%] lg:w-[325px] mt-3">
                   {section.description}
                 </p>
               )}
