@@ -7,8 +7,8 @@ import pageIcon from "../assets/page.svg"
 const Footer = () => {
   return (
     <div className="flex justify-center px-[6%]">
-      <div className="container flex justify-between items-center border-t border-t-[#FFFFFF1A] border-dashed py-[40px]">
-        <span className="text-[#EDFCEA] font-normal text-[16px] leading-[130%]">©2025 Sparkvia AI. All Right Reserved </span>
+      <div className="container flex flex-wrap justify-center gap-4 md:justify-between items-center border-t border-t-[#FFFFFF1A] border-dashed py-[20px] md:py-[40px]">
+        <span className="text-[#EDFCEA] font-normal text-[14px] md:text-[16px] leading-[130%]">©2025 Sparkvia AI. All Right Reserved </span>
         <div className='flex items-center gap-4'>
             <button><img src={pageIcon} alt={pageIcon} /></button>
             <button><img src={xIcon} alt={xIcon} /></button>

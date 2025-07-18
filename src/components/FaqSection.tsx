@@ -38,8 +38,8 @@ const FaqSection: React.FC = () => {
   };
 
   return (
-    <section className="flex justify-center text-white py-16">
-      <div className=" container flex justify-between flex-col md:flex-row px-[6%]">
+    <section className="flex justify-center text-white py-14 md:py-16">
+      <div className=" container flex justify-between flex-col lg:flex-row gap-10 lg:gap-0 px-[6%]">
         <div>
           <h2
             style={{ fontFamily: "Gilda Display" }}
@@ -47,14 +47,14 @@ const FaqSection: React.FC = () => {
           >
             Frequently <br /> Asked Questions
           </h2>
-          <p className="text-[#FFFFFF66] font-normal text-[20px] mt-4">Everything you need to know</p>
+          <p className="text-[#FFFFFF66] font-normal text-[20px] mt-2 md:mt-4">Everything you need to know</p>
         </div>
 
         <div className="space-y-6">
           {faqs.map((faq, index) => (
             <div
               key={index}
-              className="border-b border-[#FFFFFF1A] border-dashed pb-4 cursor-pointer w-[500px]"
+              className="border-b border-[#FFFFFF1A] border-dashed pb-4 cursor-pointer lg:w-[500px]"
               onClick={() => toggleFAQ(index)}
             >
               <div className="flex justify-between items-start">
