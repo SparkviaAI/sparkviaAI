@@ -1,0 +1,37 @@
+import React from "react";
+import { Modal } from "antd";
+import arrowRight from "../assets/rightarrow.svg";
+
+interface MobileSideBarProps {
+  isOpen: boolean;
+  handleCancel: () => void;
+}
+
+const MobileSideBar: React.FC<MobileSideBarProps> = ({ isOpen, handleCancel }) => {
+  return (
+      <Modal
+        footer={null}
+        open={isOpen}
+        onCancel={handleCancel}
+        className="navModal"
+      >
+        <div className="flex flex-col gap-10 p-[20px] text-[#FFFFFF]">
+        <ul className="flex flex-col gap-10 p-[20px] text-[#FFFFFF text-[#000]">
+          <li className="cursor-pointer">Solutions</li>
+          <li className="cursor-pointer">Features</li>
+          <li className="cursor-pointer">FAQ</li>
+        </ul>       
+          <button className="bg-[#050505] px-[30px] rounded-[50px] text-xs h-[55px] w-[60%] border-[2px] border-[#FFFFFF] cursor-pointer text-[#FFFFFF]">
+            <div className="flex justify-between items-center">
+              <span>Get Started</span>
+              <div className="bg-[#49DF28] w-[40px] h-[40px] rounded-[100px] flex justify-center items-center relative left-[20px] -ml-[10px]">
+                <img src={arrowRight} alt="" />
+              </div>
+            </div>
+          </button>
+        </div>
+      </Modal>
+  );
+};
+
+export default MobileSideBar;
