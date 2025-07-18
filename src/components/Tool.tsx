@@ -7,7 +7,7 @@ import pentIcon from "../assets/pen.svg";
 
 const Tool = () => {
   return (
-    <div className="flex justify-center">
+    <div className="flex justify-center pt-[60px] lg:pt-0">
       <div className="container px-[6%]">
         <div className="flex justify-between items-center relative lg:bottom-[14rem] lg:-mb-[14rem]">
           <div className="flex flex-col gap-4 md:w-[450px] text-[#FFFFFF] mb-[40px] lg:mb-0">

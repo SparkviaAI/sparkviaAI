@@ -18,7 +18,7 @@ const SectionOne = () => {
             <div className="border border-[#292929] flex justify-between items-center w-full h-[50px] rounded-[100px] p-[10px] mt-6">
               <input
                 type="text"
-                className="w-[90%] h-full outline-none px-[10px] text-[#DADADA] font-medium text-[14px] leading-[110.00000000000001%]"
+                className="w-[90%] h-full outline-none px-[5px] lg:px-[10px] text-[#DADADA] font-medium text-[12px] lg:text-[14px] leading-[110.00000000000001%]"
                 placeholder="Prompt with our “Copywriting Tool”"
               />
               <button className="cursor-pointer">
