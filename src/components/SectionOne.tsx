@@ -18,6 +18,7 @@ const SectionOne = () => {
             <div className="border border-[#292929] flex justify-between items-center w-full h-[50px] rounded-[100px] p-[10px] mt-6">
               <input
                 type="text"
+                readOnly
                 className="w-[90%] h-full outline-none px-[5px] lg:px-[10px] text-[#DADADA] font-medium text-[12px] lg:text-[14px] leading-[110.00000000000001%]"
                 placeholder="Prompt with our “Copywriting Tool”"
               />
@@ -26,7 +27,7 @@ const SectionOne = () => {
               </button>
             </div>
           </div>
-          <div className="lg:w-[546px] flex flex-col gap-4 text-center relative bottom-3.5 lg:bottom-0">
+          <div id="solutions" className="lg:w-[546px] flex flex-col gap-4 text-center relative bottom-3.5 lg:bottom-0">
             <h1
               style={{ fontFamily: "Gilda Display" }}
               className="text-[#111111] font-normal text-4xl lg:text-[48px] leading-[110.00000000000001%] lg:w-[508px]"

@@ -7,6 +7,9 @@ body {
   background-color: #111111;
   font-family: "Gilroy";
 }
+html {
+  scroll-behavior: smooth;
+}
 
 .shad {
   border-image-source: linear-gradient(180deg, #111111 0%, #49df28 100%);

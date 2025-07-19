@@ -38,7 +38,7 @@ const FaqSection: React.FC = () => {
   };
 
   return (
-    <section className="flex justify-center text-white py-14 md:py-16">
+    <section id="faq" className="flex justify-center text-white py-14 md:py-16">
       <div className=" container flex justify-between flex-col lg:flex-row gap-10 lg:gap-0 px-[6%]">
         <div>
           <h2

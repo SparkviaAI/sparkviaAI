@@ -26,7 +26,7 @@ const repeatedFeatures = [...features, ...features];
 
 const FeaturesSection = () => {
   return (
-    <section className="bg-[#F8F8F8] py-10 lg:py-20 rounded-[20px] overflow-hidden mb-[3rem] lg:mb-[6rem]">
+    <section id="features" className="bg-[#F8F8F8] py-10 lg:py-20 rounded-[20px] overflow-hidden mb-[3rem] lg:mb-[6rem]">
       <div className="text-center">
         <div className="flex justify-center px-[6%]">
           <div className="flex justify-center flex-col items-center lg:w-[508px]">
