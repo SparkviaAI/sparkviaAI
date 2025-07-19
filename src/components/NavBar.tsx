@@ -9,22 +9,24 @@ const NavBar = () => {
   const openModal = () => setIsOpenModal(true);
   const handleCancel = () => setIsOpenModal(false);
 
+    const scrollToSection = (id: string) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+      handleCancel();
+    }
+  };
+
   return (
     <div className="flex justify-center sticky top-0 bg-[#111111] z-10">
       <div className="container flex items-center justify-between py-[20px] px-[6%]">
         <button>
           <img src={brandLogo} alt={brandLogo} />
         </button>
-        <ul className="lg:flex hidden gap-[60px] font-medium text-[16px] leading-[130%] text-[#B8B8B8]">
-          <a href="#solutions">
-            <li className="cursor-pointer">Solutions</li>
-          </a>
-          <a href="#features">
-            <li className="cursor-pointer">Features</li>
-          </a>
-          <a href="#faq">
-            <li className="cursor-pointer">FAQ</li>
-          </a>
+          <ul className="lg:flex hidden gap-[60px] font-medium text-[16px] leading-[130%] text-[#B8B8B8]">
+          <li onClick={() => scrollToSection("solutions")} className="cursor-pointer">Solutions</li>
+          <li onClick={() => scrollToSection("features")} className="cursor-pointer">Features</li>
+          <li onClick={() => scrollToSection("faq")} className="cursor-pointer">FAQ</li>
         </ul>
         <button className="lg:flex hidden justify-center items-center font-semibold text-[16px] text-[#E8E8E8] leading-[130%] border border-[#E8E8E8] px-[24px] py-[19px] rounded-[5px] h-[49px] cursor-pointer">
           Get Started
@@ -33,7 +35,7 @@ const NavBar = () => {
           <img src={menuIcon} alt="menuIcon" />
         </button>
       </div>
-      <MobileSideBar isOpen={isOpenModal} handleCancel={handleCancel} />
+      <MobileSideBar isOpen={isOpenModal} handleCancel={handleCancel} scrollToSection={scrollToSection} />
     </div>
   );
 };

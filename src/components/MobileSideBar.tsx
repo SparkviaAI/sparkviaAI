@@ -5,9 +5,10 @@ import arrowRight from "../assets/rightarrow.svg";
 interface MobileSideBarProps {
   isOpen: boolean;
   handleCancel: () => void;
+   scrollToSection: (id: string) => void;
 }
 
-const MobileSideBar: React.FC<MobileSideBarProps> = ({ isOpen, handleCancel }) => {
+const MobileSideBar: React.FC<MobileSideBarProps> = ({ isOpen, handleCancel, scrollToSection }) => {
   return (
       <Modal
         footer={null}
@@ -17,16 +18,10 @@ const MobileSideBar: React.FC<MobileSideBarProps> = ({ isOpen, handleCancel }) =
       >
         <div className="flex flex-col gap-10 p-[20px] text-[#FFFFFF]">
         <ul className="flex flex-col gap-10 p-[20px]">
-         <a href="#solutions" onClick={handleCancel}>
-           <li className="cursor-pointer text-[#000]">Solutions</li>
-         </a>
-          <a href="#features" onClick={handleCancel}>
-            <li className="cursor-pointer text-[#000]">Features</li>
-          </a>
-          <a href="#faq" onClick={handleCancel}>
-          <li className="cursor-pointer text-[#000]">FAQ</li>
-          </a>
-        </ul>       
+          <li onClick={() => scrollToSection("solutions")} className="cursor-pointer text-[#000]">Solutions</li>
+          <li onClick={() => scrollToSection("features")} className="cursor-pointer text-[#000]">Features</li>
+          <li onClick={() => scrollToSection("faq")} className="cursor-pointer text-[#000]">FAQ</li>
+        </ul>
           <button className="bg-[#050505] px-[30px] rounded-[50px] text-xs h-[55px] w-[80%] border-[2px] border-[#FFFFFF] cursor-pointer text-[#FFFFFF]">
             <div className="flex justify-between items-center">
               <span>Get Started</span>
