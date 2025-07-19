@@ -10,7 +10,7 @@ const NavBar = () => {
   const handleCancel = () => setIsOpenModal(false);
 
   return (
-    <div className="flex justify-center">
+    <div className="flex justify-center sticky top-0 bg-[#111111] z-10">
       <div className="container flex items-center justify-between py-[20px] px-[6%]">
         <button>
           <img src={brandLogo} alt={brandLogo} />
