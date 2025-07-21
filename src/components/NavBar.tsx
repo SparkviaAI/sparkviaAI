@@ -21,7 +21,7 @@ const NavBar = () => {
   return (
     <div className="flex justify-center sticky top-0 bg-[#111111] z-10">
       <div className="container flex items-center justify-between py-[20px] px-[6%]">
-        <button>
+        <button onClick={() => scrollToSection("home")}>
           <img src={brandLogo} alt={brandLogo} />
         </button>
           <ul className="lg:flex hidden gap-[60px] font-medium text-[16px] leading-[130%] text-[#B8B8B8]">

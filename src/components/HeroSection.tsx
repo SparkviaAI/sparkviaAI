@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const HeroSection = () => {
   return (
-    <div className="flex justify-center lg:pt-[18rem] px-[6%]">
+    <div className="flex justify-center lg:pt-[18rem] px-[6%]" id="home">
       <div className="flex flex-col lg:flex-row items-center lg:-mb-[14rem]">
         <img src={circleIcon} alt={circleIcon} className="relative top-20 lg:top-0" />
         <div className="flex flex-col gap-6 text-center items-center lg:w-[531px] relative lg:bottom-[20rem] lg:right-[43rem] lg:-mr-[43rem] bottom-[20rem] -mb-[10rem] lg:-mb-0">
