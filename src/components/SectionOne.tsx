@@ -27,7 +27,7 @@ const SectionOne = () => {
               </button>
             </div>
           </div>
-          <div id="solutions" className="lg:w-[546px] flex flex-col gap-4 text-center relative bottom-3.5 lg:bottom-0">
+          <div id="solutions" className="lg:w-[546px] flex flex-col gap-4 text-center relative bottom-3.5 lg:bottom-0 scroll-mt-[120px]">
             <h1
               style={{ fontFamily: "Gilda Display" }}
               className="text-[#111111] font-normal text-4xl lg:text-[48px] leading-[110.00000000000001%] lg:w-[508px]"

@@ -26,6 +26,7 @@ const repeatedFeatures = [...features, ...features];
 
 const FeaturesSection = () => {
   return (
+    <div id="features" className="scroll-mt-[120px]">
     <section id="features" className="bg-[#F8F8F8] py-10 lg:py-20 rounded-[20px] overflow-hidden mb-[3rem] lg:mb-[6rem]">
       <div className="text-center">
         <div className="flex justify-center px-[6%]">
@@ -92,6 +93,7 @@ const FeaturesSection = () => {
         </div>
       </div>
     </section>
+    </div>
   );
 };
 
