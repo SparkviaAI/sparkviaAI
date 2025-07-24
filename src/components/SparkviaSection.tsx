@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
-import marketImage from "../assets/market.svg";
-import salesImage from "../assets/salesImage.svg";
-import adCopyImage from "../assets/adCopy.svg";
+import marketImage from "../assets/market.png";
+import salesImage from "../assets/salesImage.png";
+import adCopyImage from "../assets/adCopy.png";
 
 interface SectionContent {
   title: string;
@@ -87,7 +87,7 @@ const SparkviaSection: React.FC = () => {
             <div
               key={key}
               onClick={() => handleTabClick(key as keyof typeof sections)}
-              className={`cursor-pointer font-semibold text-[18px] lg:text-[20px] transition-all ${
+              className={`cursor-pointer font-semibold text-[16px] lg:text-[18px] transition-all ${
                 activeTab === key
                   ? "text-black border-l-2 border-[#2EDB66] pl-2"
                   : "text-[#11111199] font-semibold hover:text-black pl-2 border-l-2 border-[#0000001A]"
