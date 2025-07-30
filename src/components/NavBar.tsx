@@ -29,7 +29,7 @@ const NavBar = () => {
           <li onClick={() => scrollToSection("features")} className="cursor-pointer">Features</li>
           <li onClick={() => scrollToSection("faq")} className="cursor-pointer">FAQ</li>
         </ul>
-        <Link to="https://cardanostaging.trickywebsolutions.com/registerr">        
+        <Link to="https://auth.sparkvia.ai/registerr">        
         <button className="lg:flex hidden justify-center items-center font-semibold text-[16px] text-[#E8E8E8] leading-[130%] border border-[#E8E8E8] px-[24px] py-[19px] rounded-[5px] h-[49px] cursor-pointer">
           Get Started
         </button>
