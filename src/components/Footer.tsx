@@ -10,11 +10,11 @@ const Footer = () => {
       <div className="container flex flex-wrap justify-center gap-4 md:justify-between items-center border-t border-t-[#FFFFFF1A] border-dashed py-[20px] md:py-[40px]">
         <span className="text-[#EDFCEA] font-normal text-[14px] md:text-[16px] leading-[130%]">©2025 Sparkvia AI. All Right Reserved </span>
         <div className='flex items-center gap-4'>
-            <button><img src={pageIcon} alt={pageIcon} /></button>
-            <button><img src={xIcon} alt={xIcon} /></button>
-            <button><img src={telegramIcon} alt={telegramIcon} /></button>
-            <button><img src={discordIcon} alt={discordIcon} /></button>
-            <button><img src={mediumIcon} alt={mediumIcon} /></button>
+            <a href='https://docs.sparkvia.ai/' target='_blank' rel='noreferrer'><img src={pageIcon} alt={pageIcon} /></a>
+            <a href='https://x.com/sparkvia_AI' target='_blank' rel='noreferrer'><img src={xIcon} alt={xIcon} /></a>
+            <a href='http://t.me/sparkvia' target='_blank' rel='noreferrer'><img src={telegramIcon} alt={telegramIcon} /></a>
+            <a href='https://discord.gg/86ugHrV4' target='_blank' rel='noreferrer'><img src={discordIcon} alt={discordIcon} /></a>
+            <a href='https://medium.com/@sparkviaai' target='_blank' rel='noreferrer'><img src={mediumIcon} alt={mediumIcon} /></a>
         </div>
       </div>
     </div>
