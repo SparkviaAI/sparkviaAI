@@ -13,7 +13,7 @@ const Footer = () => {
             <a href='https://docs.sparkvia.ai/' target='_blank' rel='noreferrer'><img src={pageIcon} alt={pageIcon} /></a>
             <a href='https://x.com/sparkvia_AI' target='_blank' rel='noreferrer'><img src={xIcon} alt={xIcon} /></a>
             <a href='http://t.me/sparkvia' target='_blank' rel='noreferrer'><img src={telegramIcon} alt={telegramIcon} /></a>
-            <a href='https://discord.gg/86ugHrV4' target='_blank' rel='noreferrer'><img src={discordIcon} alt={discordIcon} /></a>
+            <a href='https://discord.gg/Ab5xQeCB' target='_blank' rel='noreferrer'><img src={discordIcon} alt={discordIcon} /></a>
             <a href='https://medium.com/@sparkviaai' target='_blank' rel='noreferrer'><img src={mediumIcon} alt={mediumIcon} /></a>
         </div>
       </div>
