@@ -23,7 +23,7 @@ const MobileSideBar: React.FC<MobileSideBarProps> = ({ isOpen, handleCancel, scr
           <li onClick={() => scrollToSection("features")} className="cursor-pointer text-[#000]">Features</li>
           <li onClick={() => scrollToSection("faq")} className="cursor-pointer text-[#000]">FAQ</li>
         </ul>
-        <Link to="https://cardanostaging.trickywebsolutions.com/registerr">        
+        <Link to="https://auth.sparkvia.ai/user/register">        
           <button className="bg-[#050505] px-[30px] rounded-[50px] text-xs h-[55px] w-[80%] border-[2px] border-[#FFFFFF] cursor-pointer text-[#FFFFFF]">
             <div className="flex justify-between items-center">
               <span>Get Started</span>
