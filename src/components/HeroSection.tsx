@@ -20,11 +20,18 @@ const HeroSection = () => {
             Create blogs, ad copies, emails, social media posts, images, and
             more in seconds! Register and get a free 100 Spark credits
           </p>
-          <Link to="https://auth.sparkvia.ai/user/login">          
-          <button className="flex justify-center items-center rounded-[5px] font-semibold text-[14px] lg:text-[16px] leading-[130%] bg-[#FFFFFF] py-[19px] px-[24px] h-[49px] mt-[20px] cursor-pointer">
-            Start writing Now!
-          </button>
-          </Link>
+          <div className="flex gap-5 items-center-safe max-[996px]:flex-col max-[996px]:gap-0">
+            <Link to="https://auth.sparkvia.ai/user/login">          
+              <button className="flex justify-center items-center rounded-[5px] font-semibold text-[14px] lg:text-[16px] leading-[130%] bg-[#FFFFFF] py-[19px] px-[24px] h-[49px] mt-[20px] cursor-pointer">
+                Start writing
+              </button>
+            </Link>
+            <Link to="https://sale.sparkvia.ai">          
+              <button className="flex justify-center items-center rounded-[5px] font-semibold text-[14px] lg:text-[16px] leading-[130%] bg-[#FFFFFF] py-[19px] px-[24px] h-[49px] mt-[20px] cursor-pointer">
+                Buy SPK
+              </button>
+            </Link>
+          </div>
         </div>
       </div>
     </div>

@@ -30,9 +30,12 @@ const NavBar = () => {
           <li onClick={() => scrollToSection("faq")} className="cursor-pointer">FAQ</li>
         </ul>
         <Link to="https://auth.sparkvia.ai/user/register">        
-        <button className="lg:flex hidden justify-center items-center font-semibold text-[16px] text-[#E8E8E8] leading-[130%] border border-[#E8E8E8] px-[24px] py-[19px] rounded-[5px] h-[49px] cursor-pointer">
+        {/* <button className="lg:flex hidden justify-center items-center font-semibold text-[16px] text-[#E8E8E8] leading-[130%] border border-[#E8E8E8] px-[24px] py-[19px] rounded-[5px] h-[49px] cursor-pointer">
           Get Started
-        </button>
+        </button> */}
+        <a href="https://sale.sparkvia.ai" className="lg:flex hidden justify-center items-center font-semibold text-[16px] text-[#E8E8E8] leading-[130%] border border-[#E8E8E8] px-[24px] py-[19px] rounded-[5px] h-[49px] cursor-pointer">
+          Buy SPK
+        </a>
         </Link>
         <button onClick={openModal} className="lg:hidden block text-white">
           <img src={menuIcon} alt="menuIcon" />
